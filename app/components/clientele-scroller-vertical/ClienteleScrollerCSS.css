@@ -1,0 +1,72 @@
+  /* new Css */
+
+  .ulGroupVertical {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    column-gap: 80px;
+  }
+
+.sliderAnimationBackwards {
+  animation: slidingBackwardsVertical 30s linear infinite;
+}
+
+.sliderAnimationForwards {
+  animation: slidingForwardsVertical 30s linear infinite;
+}
+
+  .ulGroupVertical .liItem {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ulGroupVertical li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mainContainerVertical {
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .innerContainerVertical {
+    overflow: hidden;
+    height: 100%;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  @keyframes slidingBackwardsVertical {
+    from {
+      top: translateY(0);
+    }
+    to {
+      transform: translateY(-100%); 
+    }
+  }
+
+  @keyframes slidingForwardsVertical {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      top: translateY(0); 
+    }
+  }
+
+  .projectImages img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .projectContainerSlider {
+    max-width: max-content;
+    max-height: 700px;
+  }

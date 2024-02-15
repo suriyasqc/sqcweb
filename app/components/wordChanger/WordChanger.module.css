@@ -1,0 +1,22 @@
+.blinker {
+    animation: blink-caret 0.5s step-end infinite;
+    /* background-color: #FADC4B; */
+    color: #FADC4B;
+    font-weight: normal !important;
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #FADC4B;
+    }
+  }  
+  
+.mark {
+    background-color: rgb(var(--grid-bg-color));
+    color: rgb(var(--foreground-rgb));
+    line-height: 80px;
+}
